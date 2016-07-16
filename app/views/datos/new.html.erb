@@ -1,0 +1,36 @@
+
+<h1>Ingresar Alumno</h1>
+<%= form_for @persona, url: datos_path do |f| %>
+
+<div class="input-group">
+
+	<div class="input-group">
+	  <span class="glyphicon glyphicon-user" id="basic-addon1"></span>
+	  <%= f.text_field :nombre, placeholder: "Nombre" %>
+	</div>
+
+
+	<div class="input-group">
+	  <span class="glyphicon glyphicon-globe" id="basic-addon1"></span>
+	  <%= f.text_field :direccion, placeholder: "Direccion" %>
+	</div>
+
+
+	<div class="input-group">
+	  <span class="glyphicon glyphicon-phone-alt" id="basic-addon1"></span>
+	  <%= f.text_field :telefono, placeholder: "Telefono" %>
+	</div>
+
+
+	<div class="input-group">
+	  <span class="glyphicon glyphicon-home" id="basic-addon1"></span>
+	  <%= f.text_field :universidad, placeholder: "Universidad" %>
+	</div>
+
+	<div class="btn" >
+		<%= f.submit "Guardar" %>
+	</div>
+
+</div>
+
+<%end%>

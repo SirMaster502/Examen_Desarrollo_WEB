@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <title>Formulario de Alumnos</title>
+            <%= stylesheet_link_tag    "application", :media => "all" %>
+            <%= javascript_include_tag "application" %>
+            <%= csrf_meta_tags %>
+
+    </head>
+    <body>
+        <ul class="nav nav-pills">
+          <li role="presentation" class="active"><a href="../">Inicio</a></li>
+          <li role="presentation"><a href="/datos/new">Agregar Alumno</a></li>
+          <li role="presentation"><a href="/datos">Ver Alumnos</a></li>
+          <li role="presentation"><a href="/grupo/index">Integrantes</a></li>
+        </ul>
+
+        <div class="main container">
+                <%= yield %>
+        </div>
+    </body>
+</html>

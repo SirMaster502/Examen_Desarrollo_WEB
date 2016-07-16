@@ -1,0 +1,19 @@
+<h1 align="center">Alumnos Registrados</h1>
+<% @persona.each do |persona| %>
+<div class="col-md-6">
+	<div class="list-group">
+		<div class="list-group-item active">
+			<%= persona.nombre%> <span class="badge"><%= persona.id%></span>
+		</div>
+		<div class="list-group-item disble">
+			Direccion: <%= persona.direccion%>
+		</div>
+		<div class="list-group-item">
+			Telefono: <%= persona.telefono%>
+		</div>
+		<div class="list-group-item disable">
+			Universidad: <%= persona.universidad%>
+		</div>
+	</div>
+</div>
+<% end %>
